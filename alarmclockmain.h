@@ -22,11 +22,13 @@ private:
 private slots:
     void UpdateTime();
     void showContextMenu(const QPoint &pos);
+    void TriggerAlarm();
 
 protected:
     void mouseReleaseEvent(QMouseEvent*);
     void mousePressEvent(QMouseEvent *);
     void mouseMoveEvent(QMouseEvent *);
+    void closeEvent(QCloseEvent *);
 };
 
 #endif // ALARMCLOCKMAIN_H
